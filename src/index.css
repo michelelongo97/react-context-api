@@ -1,0 +1,11 @@
+img {
+  width: 250px;
+}
+
+header {
+  background-color: grey;
+}
+footer {
+  background-color: grey;
+  min-height: 100px;
+}
