@@ -10,9 +10,11 @@ import PageNotFound from "./pages/PageNotFound";
 
 import DefaultLayout from "./layouts/defaultLayout";
 
+import { AlertProvider } from "./contexts/AlertContext";
+
 export default function App() {
   return (
-    <>
+    <AlertProvider>
       <Alert message="test" />
       <BrowserRouter>
         <Routes>
@@ -25,6 +27,6 @@ export default function App() {
           <Route path="*" element={<PageNotFound />} />
         </Routes>
       </BrowserRouter>
-    </>
+    </AlertProvider>
   );
 }
